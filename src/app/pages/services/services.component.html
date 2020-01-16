@@ -1,1 +1,7 @@
-<p>services works!</p>
+<div *ngFor="let service of services; let i = index">
+    <mat-checkbox [checked]="service.active" (change)='onToggleService(i)'>{{service.name}} {{service.active ? "active" : "not active"}}</mat-checkbox>
+</div>
+
+<div>
+    <button mat-button mat-raised-button color="primary" (click)="onClickSubmit()">Click me!</button>
+</div>
