@@ -1,5 +1,5 @@
 class appConfig{
-    apiBaseUrl:string;
+    apiBaseUrl:string = "";
 
     appConfig(){
 
